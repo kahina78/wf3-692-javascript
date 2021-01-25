@@ -1,7 +1,16 @@
 window.onload= function () {
     //avant
-        var p = document.getElementsByTagName ('p');
-        var div = document.getElementsByTagName ('p');
-        var greenP = document.getElementsById ('green');
-         var p1=document.getElementsById ('p1');
-        console.log("greenP:" , greenP, "div:", div, "all paragraph:", p, "p1:" )
+        var classCard= document.getElementsByTagName ('card');
+        var divTagname = document.getElementsByTagName ('div');
+        var pTagName = document.getElementByTafName ('p');
+        var idCard = document.getElementsById ('card');
+        console.log("classCard:" ,P, "div:", div, "all paragraph:", p, "p1:");
+}
+//AUJOURD'HUI
+var pWithQuerySelectorByTagName= document.querySelector('p');
+var pWithQuerySelectorById= document.querySelector('green');
+var pWithQuerySelectorByClassName= document.querySelector('.card');
+
+console.log("pWithQuerySelector:", pWithQuerySelectorByTagName);
+console.log("pWithQuerySelectorId:", pWithQuerySelectorById);
+console.log("pWithQuerySelectorClassName:", pWithQuerySelectorByClasseName);

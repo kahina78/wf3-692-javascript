@@ -18,3 +18,4 @@ console.log("pWithQuerySelectorClassName:", pWithQuerySelectorByClasseName);
 //il faut utiliser querySelector()
 var getAllParagraphWithQuerySelectorAll= document.pWithQuerySelectorAll('p');
 console.log("getAllParagraphWithQuerySelectorAll:", getAllParagraphWithQuerySelectorAl)
+
