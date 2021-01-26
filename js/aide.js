@@ -1,16 +1,35 @@
-window.onload= function () {
-    //avant
-        var classCard= document.getElementsByTagName ('card');
-        var divTagname = document.getElementsByTagName ('div');
-        var pTagName = document.getElementByTafName ('p');
-        var idCard = document.getElementsById ('card');
-        console.log("classCard:" ,P, "div:", div, "all paragraph:", p, "p1:");
+// Boucle pour itérer dans un objet(collection, dictionnaire)
+var monObj = {
+    foo: "bar",
+    hello: "world",
+    age: 30
 }
-//AUJOURD'HUI
-var pWithQuerySelectorByTagName= document.querySelector('p');
-var pWithQuerySelectorById= document.querySelector('green');
-var pWithQuerySelectorByClassName= document.querySelector('.card');
 
-console.log("pWithQuerySelector:", pWithQuerySelectorByTagName);
-console.log("pWithQuerySelectorId:", pWithQuerySelectorById);
-console.log("pWithQuerySelectorClassName:", pWithQuerySelectorByClasseName);
+for(var keyObject in monObj){
+    console.log("key: ",keyObject, "value: ", monObj[keyObject]);
+}
+
+var tableau3 = [];
+// Comment ajouter dans un tableau ?
+console.log("Le tableau quand il est vide: ", tableau3);
+tableau3[0] = "tomate";
+console.log("Le tableau aprés un ajout: ", tableau3);
+console.log(tableau3[0]);
+
+// Ajoute à la fin du tableau
+tableau3.push("banane");
+console.log("Ajoute banane à la fin du tableau: ",tableau3[1]);
+
+// Ajoute au début du tableau
+tableau3.unshift("poire");
+console.log("Ajoute poire au debut du tableau: ", tableau3);
+
+// supprimer le dernière élément d'un tableau
+tableau3.pop();
+console.log("la méthode pop supprime banane à la fin du tableau : ", tableau3);
+
+// supprimer le première élément d'un tableau
+tableau3.shift();
+console.log("la méthode shift supprime poire au début du tableau: ", tableau3);
+
+}
