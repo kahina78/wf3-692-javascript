@@ -39,16 +39,56 @@
         //Assigner des attributs à notre élément div
         //2_createDivElement.setAttribute('class', 'square');
         //2_var createP = document.createElement('p');
+        //// Assigner un texte à notre paragraphe
+        //createP.innerText = "Hello World !";
         // Assigner un attribut à notre élément p
         //3_createP.setAttribute('class', 'color');
         //3_console.log('createP: ', createP);
 
-        var createDivElement= document.creatElement("div");
-        var creatP= document.creatElement("p");
-        var creatP= setAttribute('class', 'kahina');
-        console.log('creatP', 'creatP');
+        function DivP(div,p,Text){
+            var divHtml = document.createElement(div);
+            var pHtml = document.createElement(p);
+            divHtml.appendChild(pHtml);
+            pHtml.innerText = Text;
+            divHtml.setAttribute("class", "square");
+            pHtml.setAttribute("class", "paragraph1");
+            console.log(divHtml,pHtml);
+    }
+        var resultat1 = DivP("div", "p", "kahina");
 
-        // Assigner un texte à notre paragraphe
-        //createP.innerText = "Hello World !";
-        //console.log('createDivElement: ', createDivElement);
+      //Convertir en code ceci: Faire une fonction permettant de créer en une seul fois les élements suivant: p, div, span, section et faire un console.log de ce qui a été crée
+    //Convertir en code ceci: Pour les élément crée précédement leurs donner un enfant qui sera un élément html qui sera un p.      
+    function elementHTML(p,div,span,section){
+    var Pp = document.querySelector("p");
+    var tab = [p,div,span,section];
+    for(var elem of tab){
+       var elemHtml= document.createElement(elem);
+        elemHtml.appendChild(Pp);
+        console.log(elemHtml);
+    }
+}
 
+    var resultat2 = elementHTML("p","div", "span", "section");
+
+    /**Convertir en code ceci: Faire une fonction qui va créer 3 élément html (div) c'est trois div auront des attributs différent qui seront: id div1, id div2 et id div3 ainsi qu'une class square pour chaque div créer plus une class color1, color2, color3, une fois fais l'afficher dans la console
+
+    Pour chacune div créer précédemment, leur donner un enfant qui sera un paragraphe html qui aura pour class paragraphe1, paragraphe2, paragraphe3 et qui contiendra simplement 3 prénom de la class
+  
+    */
+        function creeDiv(){
+        for(var i=1;i<=3;i++){
+        var DivH = document.createElement("div");
+        DivH.setAttribute("class","square color"+i);
+        DivH.setAttribute("id","div"+i);
+        console.log(DivH);
+    }
+}
+         var resultat3 = creeDiv();
+
+
+
+
+         
+
+
+}
