@@ -335,7 +335,7 @@ for(i=0; i<2;i++){
               console.log(divHtml,pHtml);
       }
           var resultat1 = DivP("div", "p", "kahina");
-          
+
           //Convertir en code ceci: Faire une fonction permettant de créer en une seul fois les élements suivant: p, div, span, section et faire un console.log de ce qui a été crée
 //Convertir en code ceci: Pour les élément crée précédement leurs donner un enfant qui sera un élément html qui sera un p.      
         function elementHTML(p,div,span,section){
@@ -365,11 +365,24 @@ function creeDiv(){
 }
    var resultat3 = creeDiv();
 
+   //autre façon
 
+   //var three = function(){
+    for(i=0; i<3; i++){
+        var IdElementHtml = "div" + (i+1);
+        var colorElementHtml = "color" + (i + 1);
+        var threediv = document.createElement('div');
+        threediv.setAttribute("class","square " + colorElementHtml);
+        threediv.setAttribute("id",IdElementHtml);
+        
+        console.log(threediv);
+     }
+    
+}
 
-  
+    three();
 
-             
+   
              
          
          

@@ -83,12 +83,12 @@
         console.log(DivH);
     }
 }
-         var resultat3 = creeDiv();
+     creeDiv(); //on a pas besoin de fair var resultat
 
 
 
 
-         
+
 
 
 }
